@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udith Rashan - CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Reset & Base Settings */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.5; background: #f4f4f9; padding: 20px; }
+    
+    /* A4 Size Paper styling */
+    .page {
+      background: white;
+      max-width: 21cm; /* A4 width */
+      min-height: 29.7cm; /* A4 height */
+      margin: 0 auto;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header { border-bottom: 2px solid #06b6d4; padding-bottom: 20px; margin-bottom: 20px; }
+    h1 { font-size: 2.5rem; color: #111; font-weight: 700; margin-bottom: 5px; }
+    .subtitle { font-size: 1.2rem; color: #06b6d4; font-weight: 600; margin-bottom: 15px; }
+    .contact-info { display: flex; flex-wrap: wrap; gap: 15px; font-size: 0.9rem; color: #555; }
+    .contact-info a { color: #555; text-decoration: none; display: flex; align-items: center; gap: 5px; }
+
+    /* Layout */
+    .cv-body { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+    
+    /* Sections */
+    section { margin-bottom: 25px; }
+    h2 { font-size: 1.3rem; color: #111; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+    
+    /* Text Blocks */
+    .summary { font-size: 0.95rem; color: #444; text-align: justify; }
+    
+    /* Experience / Education / Projects */
+    .item { margin-bottom: 15px; }
+    .item-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px; }
+    .item-title { font-weight: 700; color: #222; }
+    .item-date { font-size: 0.85rem; color: #777; font-weight: 500; }
+    .item-subtitle { font-style: italic; font-size: 0.9rem; color: #555; margin-bottom: 5px; }
+    .item-desc { font-size: 0.9rem; color: #444; }
+    .item-desc ul { margin-left: 20px; margin-top: 5px; }
+    .item-desc li { margin-bottom: 3px; }
+
+    /* Skills Grid */
+    .skills-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skills-list span { background: #f0f4f8; border: 1px solid #e1e8ed; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem; color: #333; font-weight: 500; }
+
+    /* Certifications */
+    .cert-item { margin-bottom: 10px; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
+
+    /* Web buttons (Hidden when printing) */
+    .no-print { text-align: center; margin-bottom: 20px; }
+    .btn { background: #06b6d4; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-family: inherit; font-size: 1rem; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 600; }
+    .btn:hover { background: #0891b2; }
+
+    /* Print Styles */
+    @media print {
+      body { background: white; padding: 0; }
+      .page { box-shadow: none; margin: 0; max-width: 100%; width: 100%; padding: 0; }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Print action button -->
+  <div class="no-print">
+    <button class="btn" onclick="window.print()">
+      <i class="fas fa-file-pdf"></i> Download as PDF / Print
+    </button>
+    <a href="index.html" class="btn" style="background: #333; margin-left: 10px;">
+      <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+  </div>
+
+  <div class="page">
+    <header>
+      <h1>Udith Rashan</h1>
+      <div class="subtitle">ICT Undergraduate & Software Developer</div>
+      <div class="contact-info">
+        <a href="mailto:udithrashan1234@gmail.com"><i class="fas fa-envelope"></i> udithrashan1234@gmail.com</a>
+        <a href="https://www.linkedin.com/in/rashnx86" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/rashnx86</a>
+        <a href="https://github.com/rashan86" target="_blank"><i class="fab fa-github"></i> github.com/rashan86</a>
+        <span><i class="fas fa-map-marker-alt"></i> Kalutara, Sri Lanka</span>
+      </div>
+    </header>
+
+    <div class="cv-body">
+      <!-- Left Column -->
+      <div class="main-content">
+        <section>
+          <h2>Professional Summary</h2>
+          <p class="summary">
+            ICT undergraduate passionate about software development, networking, and quality assurance. Continuously improving skills in the MERN Stack (MongoDB, Express.js, React.js, Node.js), networking concepts, and software testing through academic and personal projects. Eager to solve real-world problems and build robust, user-centric web applications.
+          </p>
+        </section>
+
+        <section>
+          <h2>Projects</h2>
+          
+          <div class="item">
+            <div class="item-header">
+              <span class="item-title">Smart Laundry Mart</span>
+              <span class="item-date">2026</span>
+            </div>
+            <div class="item-subtitle">React.js, PHP REST API, MySQL, Tailwind CSS</div>
+            <div class="item-desc">
+              <ul>
+                <li>Developed an automated platform for managing laundry services.</li>
+                <li>Implemented real-time order tracking and smart package selection (Silver, Gold, Platinum).</li>
+                <li>Built a centralized administrative dashboard for order monitoring and user management.</li>
+                <li>Ensured secure data handling using PDO prepared statements to prevent SQL Injection.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <span class="item-title">Smart Wardrobe AI</span>
+              <span class="item-date">2026</span>
+            </div>
+            <div class="item-subtitle">Vanilla JS, CSS3, Web Components, LocalStorage</div>
+            <div class="item-desc">
+              <ul>
+                <li>Built a sophisticated digital wardrobe manager with a sleek dark glassmorphism UI.</li>
+                <li>Integrated outfit building capabilities with real-time color harmony analysis using RGB distance algorithms.</li>
+                <li>Implemented a comprehensive laundry tracking system with countdown timers.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <div class="item">
+            <div class="item-header">
+              <span class="item-title">University of Vavuniya</span>
+              <span class="item-date">2022 - 2027</span>
+            </div>
+            <div class="item-subtitle">Bachelor of Information and Communication Technology Honours Degree</div>
+            <div class="item-desc">
+              Focusing on Information Technology, Software Engineering, and Networking.
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right Column -->
+      <div class="sidebar">
+        <section>
+          <h2>Technical Skills</h2>
+          <div class="skills-list">
+            <span>Python</span>
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>MySQL</span>
+            <span>PHP</span>
+            <span>JavaScript (ES6+)</span>
+            <span>HTML5 & CSS3</span>
+            <span>Tailwind CSS</span>
+            <span>Git & GitHub</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Core Competencies</h2>
+          <div class="skills-list">
+            <span>Full-Stack Development</span>
+            <span>Network Services</span>
+            <span>Quality Inspection / QA</span>
+            <span>Software Testing</span>
+            <span>REST API Design</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Certifications</h2>
+          <div class="cert-item"><i class="fas fa-certificate" style="color: #06b6d4;"></i> Networking Basics</div>
+          <div class="cert-item"><i class="fas fa-certificate" style="color: #06b6d4;"></i> Python for Beginners</div>
+        </section>
+        
+        <section>
+          <h2>Languages</h2>
+          <div class="skills-list">
+            <span>Sinhala (Native)</span>
+            <span>English (Professional)</span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
