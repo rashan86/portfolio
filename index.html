@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udith Rashan | ICT Undergraduate & Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Udith<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn-contact">Let's Talk</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <span class="greeting animate-up">Hello, I am</span>
+        <h1 class="animate-up delay-1">Udith Rashan</h1>
+        <h2 class="animate-up delay-2">ICT Undergraduate & Software Developer.</h2>
+        <p class="animate-up delay-3">I am passionate about software development, networking, and quality assurance. Currently exploring the MERN stack and eager to solve real-world problems.</p>
+        <div class="hero-actions animate-up delay-4">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#about"><i class="fas fa-chevron-down"></i></a>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text glass-card reveal">
+            <h3>Who I am</h3>
+            <p>I am an ICT undergraduate at the <strong>University of Vavuniya</strong> (2022-2027), continuously improving my skills in the MERN Stack, networking concepts, and software testing through academic and personal projects.</p>
+            <p>I am eager to learn, solve real-world problems, and gain hands-on experience through an internship where I can grow as an IT professional.</p>
+            <div class="stats">
+              <div class="stat-item">
+                <span class="stat-num">MERN</span>
+                <span class="stat-label">Stack Focus</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">BSc</span>
+                <span class="stat-label">Hons. IT Undergraduate</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual glass-card reveal delay-1">
+            <div class="code-snippet">
+              <pre><code>const developer = {
+  name: 'Udith Rashan',
+  role: 'ICT Undergraduate',
+  university: 'University of Vavuniya',
+  interests: ['MERN Stack', 'Networking', 'QA'],
+  isReadyForInternship: true
+};
+
+developer.grow();</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title text-center">My Arsenal</h2>
+        <p class="section-subtitle text-center">Technologies and tools I use to bring ideas to life.</p>
+        
+        <div class="skills-grid">
+          <div class="skill-card glass-card reveal">
+            <i class="fab fa-python skill-icon" style="color: #3776AB;"></i>
+            <h4>Python</h4>
+          </div>
+          <div class="skill-card glass-card reveal delay-1">
+            <i class="fab fa-node-js skill-icon" style="color: #339933;"></i>
+            <h4>Node.js & Express</h4>
+          </div>
+          <div class="skill-card glass-card reveal delay-2">
+            <i class="fab fa-react skill-icon" style="color: #61dafb;"></i>
+            <h4>React.js</h4>
+          </div>
+          <div class="skill-card glass-card reveal delay-3">
+            <i class="fas fa-database skill-icon" style="color: #47A248;"></i>
+            <h4>MongoDB</h4>
+          </div>
+          <div class="skill-card glass-card reveal">
+            <i class="fas fa-network-wired skill-icon" style="color: #06b6d4;"></i>
+            <h4>Networking</h4>
+          </div>
+          <div class="skill-card glass-card reveal delay-1">
+            <i class="fas fa-bug skill-icon" style="color: #ef4444;"></i>
+            <h4>Software Testing (QA)</h4>
+          </div>
+          <div class="skill-card glass-card reveal delay-2">
+            <i class="fab fa-js skill-icon" style="color: #f7df1e;"></i>
+            <h4>JavaScript</h4>
+          </div>
+          <div class="skill-card glass-card reveal delay-3">
+            <i class="fab fa-git-alt skill-icon" style="color: #f05032;"></i>
+            <h4>Git & GitHub</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Work</h2>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card glass-card reveal">
+            <div class="project-img placeholder-gradient-1">
+              <i class="fas fa-tshirt project-icon"></i>
+            </div>
+            <div class="project-content">
+              <h3>Smart Wardrobe AI</h3>
+              <p>A sophisticated digital wardrobe manager with outfit building, laundry tracking, and AI garment recognition simulations. Features a stunning dark glassmorphism UI.</p>
+              <div class="project-tech">
+                <span>Vanilla JS</span>
+                <span>CSS3</span>
+                <span>LocalStorage DB</span>
+                <span>Web Components</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/rashan86/smart-wardrobe-app" target="_blank" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card glass-card reveal delay-1">
+            <div class="project-img placeholder-gradient-2">
+              <i class="fas fa-soap project-icon"></i>
+            </div>
+            <div class="project-content">
+              <h3>Smart Laundry Mart</h3>
+              <p>An automated platform for managing laundry services. Features real-time order tracking, smart package selection (Silver, Gold, Platinum), and a centralized admin dashboard.</p>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>PHP REST API</span>
+                <span>MySQL</span>
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/rashan86/smart_laundry_mart" target="_blank" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="btn-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-box glass-card reveal">
+          <div class="contact-info">
+            <h2>Let's build something amazing together.</h2>
+            <p>Whether you have a project in mind, a freelance opportunity, or just want to say hi, my inbox is always open.</p>
+            <div class="social-links">
+              <a href="https://github.com/rashan86" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/rashnx86" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            <a href="mailto:udithrashan1234@gmail.com" class="email-link"><i class="fas fa-envelope"></i> udithrashan1234@gmail.com</a>
+          </div>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="input-group">
+              <input type="text" id="name" required placeholder="Your Name">
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" required placeholder="Your Email">
+            </div>
+            <div class="input-group">
+              <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message <i class="fas fa-paper-plane" style="margin-left: 8px;"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Udith Rashan. Designed & Built with passion.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
