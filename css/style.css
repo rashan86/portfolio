@@ -240,12 +240,94 @@ h1, h2, h3, h4 {
   z-index: -1;
 }
 
-.hero-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
   z-index: 1;
   width: 100%;
+}
+
+.hero-content {
+  flex: 1;
+  z-index: 1;
+}
+
+.hero-image-wrapper {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  padding: 12px;
+  border-radius: 24px;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 30px rgba(6, 182, 212, 0.2);
+  position: relative;
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(6, 182, 212, 0.6);
+}
+
+.profile-img-container {
+  width: 290px;
+  height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  transition: transform 0.5s ease;
+}
+
+.profile-card:hover .profile-img {
+  transform: scale(1.04);
+}
+
+.status-badge {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0f172a;
+  border: 1px solid var(--accent-cyan);
+  color: #f8fafc;
+  padding: 0.4rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.825rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #22c55e;
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
 }
 
 .greeting {
@@ -624,6 +706,18 @@ footer {
 
 /* Responsive */
 @media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .profile-img-container {
+    width: 240px;
+    height: 310px;
+  }
   .about-grid, .contact-box {
     grid-template-columns: 1fr;
   }
